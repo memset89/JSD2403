@@ -27,8 +27,3 @@ public class HelloWorld {
  多行注释
  */
 
-/**
- *
- 文档注释
- *
- */
