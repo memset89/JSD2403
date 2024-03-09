@@ -26,7 +26,9 @@ public class TypeConversion {
         long j=(long)s;//float转long需要强制转换
         System.out.println(j);
         //byte 可以直接被赋值 但不能超限
-
+        byte b1=5;byte b2=6;
+        byte b3=(byte)(b1+b2);//两个byte计算时先计算再强转  因为他们运算的结果才需要转 中间过程会转换成int（计算时）
+        //Unicode  世界通用字符集 一个字符对应一个码  a 97  A  65   0  48
 
     }
 }
