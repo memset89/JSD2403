@@ -12,7 +12,7 @@ public class CharDemo {
         System.out.println(g);
         g=65535;
         System.out.println(g);
-        g=34587;
+        g=34521;
         System.out.println(g);
         g='\\';
         System.out.println(g);
