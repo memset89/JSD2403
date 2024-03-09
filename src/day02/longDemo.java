@@ -1,5 +1,7 @@
 package day02;
 
+import java.math.BigDecimal;
+
 public class longDemo {
     public static void main(String[] args) {
         //运算时若有可能溢出，建议在第一个数字后加L
@@ -10,6 +12,8 @@ public class longDemo {
         System.out.println(e);
         //System.out.println(f);
         System.out.println(g);
+        //BigDecimal money;
+
 
     }
 }
