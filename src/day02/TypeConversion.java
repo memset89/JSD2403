@@ -25,6 +25,8 @@ public class TypeConversion {
         s=0.1F;
         long j=(long)s;//float转long需要强制转换
         System.out.println(j);
+        //byte 可以直接被赋值 但不能超限
+
 
     }
 }
