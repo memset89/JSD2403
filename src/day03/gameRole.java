@@ -12,14 +12,20 @@ class role{
 public class gameRole {
     public static void main(String[] args) throws InterruptedException {
         role jjboy = new role();
-        jjboy.attack=425;
+        /*jjboy.attack=425;
         jjboy.HP=5000;
-        jjboy.MP=140;
+        jjboy.MP=140;*/
         role thunder =new role();
-        thunder.attack=560;
+        /*thunder.attack=560;
         thunder.HP=3820;
-        thunder.MP=120;
+        thunder.MP=120;*/
         Random x=new Random();
+        jjboy.attack=x.nextInt(1000);
+        jjboy.HP=x.nextInt(100000);
+        jjboy.MP=x.nextInt(500);
+        thunder.attack=x.nextInt(1000);
+        thunder.HP=x.nextInt(100000);
+        thunder.MP=x.nextInt(500);
         int x1=x.nextInt(100);
         int x2=x.nextInt(100);
         boolean inChess=(x1>=x2);
