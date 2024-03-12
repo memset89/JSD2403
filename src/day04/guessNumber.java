@@ -10,6 +10,8 @@ public class guessNumber {
         n=f.nextInt(1000);
         Scanner x=new Scanner(System.in);
         while (true){
+            //Math.random()  0.0 ->0.99999999999999999999999
+            //
             System.out.println("请输入猜测值：");
             c=x.nextInt();
             b++;
@@ -26,6 +28,10 @@ public class guessNumber {
                 }
                 System.out.printf("总共猜了"+b+"次");
                 break;
+                /**
+                 * 3.30  44%
+                 *
+                 */
             }
         }
     }
