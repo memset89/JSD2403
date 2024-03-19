@@ -1,6 +1,6 @@
 package StageTwo.day10ooday04;
 /** 动物类 */
-public class Animal {
+public abstract class Animal {
     String name;
     int age;
     String color;
@@ -15,9 +15,7 @@ public class Animal {
     void drink(){
         System.out.println(color+"色的"+age+"岁的"+name+"正在喝水...");
     }
-    void eat(){ //下次课继续处理
-        System.out.println(color+"色的"+age+"岁的"+name+"正在吃饭...");
-    }
+    abstract void eat();
 }
 
 
