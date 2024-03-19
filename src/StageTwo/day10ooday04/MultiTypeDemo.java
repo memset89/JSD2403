@@ -18,7 +18,7 @@ public class MultiTypeDemo {
         //演示向上造型的第二点应用
         //animal不能new
         //但是可以new数组
-        /*Animal[] animals=new Animal[5];
+        Animal[] animals=new Animal[5];
         animals[0]=new Dog("wom",2,"write");
         animals[1]=new Chick("bom",2,"blue");
         animals[2]=new Fish("yom",2,"yellow");
@@ -28,8 +28,21 @@ public class MultiTypeDemo {
             System.out.println(animals[i].name);
             animals[i].drink();
             animals[i].eat();
+            if (animals[i] instanceof Dog){
+                Dog d=(Dog)animals[i];
+                d.lookHome();
+            }
+            if (animals[i] instanceof Chick){
+                Chick c=(Chick)animals[i];
+                c.layEggs();
+            }
+            if (animals[i] instanceof Swim){
+                Swim a=(Swim) animals[i];
+                a.swim();
+            }
         }
-        */
+
+        /*
         Animal o=new Dog("Tom",2,"yellow");
         Dog g=(Dog)o;
         Swim s=(Swim)o;
@@ -40,7 +53,7 @@ public class MultiTypeDemo {
         }
         else {
             System.out.println("o不是Fish的类型");
-        }
+        }*/
 
     }
 }
